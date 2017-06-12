@@ -1,5 +1,5 @@
 require('sinatra')
-require('sinatra/contrib/all') if development?
+require('sinatra/contrib/all')
 require('pry-byebug')
 require('json')
 require_relative('models/game.rb')
@@ -10,9 +10,9 @@ end
 
 get '/run/:player_1/:player_2' do
   game = Game.new(params["player_1"], params["player_2"])
-  return game.run()
-  # @winner = game.run
-  # erb(:result)
+  # return game.run()
+  @winner = game.run()
+  erb(:result)
 end
 
 get '/roll_die' do
