@@ -9,11 +9,11 @@ class Game
     if @player_1 == @player_2
       return "It's a draw!"
     elsif @player_1 == "rock"
-      return @player_2 == "paper" ? "paper is the winner" : "rock is the winner"
+      return @player_2 == "paper" ? "Paper is the winner. Somehow." : "Rock is the winner."
     elsif @player_1 == "paper"
-      return @player_2 == "scissors" ? "scissors is the winner" : "paper is the winner"
+      return @player_2 == "scissors" ? "Scissors is the winner." : "Paper is the winner."
     elsif @player_1 == "scissors"
-      return @player_2 == "rock" ? "rock is the winner" : "scissors is the winner"
+      return @player_2 == "rock" ? "Rock is the winner." : "Scissors is the winner."
     end
   end
 
@@ -32,5 +32,5 @@ class Game
   #   end 
   # end
 
-  
+
 end

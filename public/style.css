@@ -1,0 +1,11 @@
+body {
+  color: cornflowerblue;
+  background-color: darkslategrey;
+  font-family: arial, helvetica;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: cornflowerblue;
+
+}
