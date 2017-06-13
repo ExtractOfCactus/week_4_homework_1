@@ -7,13 +7,13 @@ class Game
 
   def run()
     if @player_1 == @player_2
-      return "It's a draw!"
+      return "It's a draw! Although in a draw there are no winners. And if you are not a winner then you must be a loser. Way to go, losers."
     elsif @player_1 == "rock"
-      return @player_2 == "paper" ? "Paper is the winner. Somehow." : "Rock is the winner."
+      return @player_2 == "paper" ? "Player two's paper is the winner. Somehow." : "Player one's rock is the winner."
     elsif @player_1 == "paper"
-      return @player_2 == "scissors" ? "Scissors is the winner." : "Paper is the winner."
+      return @player_2 == "scissors" ? "Player two's scissors are the winner." : "Player one's paper is the winner."
     elsif @player_1 == "scissors"
-      return @player_2 == "rock" ? "Rock is the winner." : "Scissors is the winner."
+      return @player_2 == "rock" ? "Player two's rock is the winner." : "Player one's scissors are the winner."
     end
   end
 
